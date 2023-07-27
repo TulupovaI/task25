@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="users">
+    <div class="container">
+      <button id="add-users">Add users</button>
+      <ul class="users__list">
+        
+      </ul>
+    </div>
+  </section> 
+<div class="container"> 
+  <div class="user-details" style="display: none;">
+    <h2>User Details</h2>
+    <p>Name: <span id="user-name"></span></p>
+    <p>Surname: <span id="user-surname"></span></p>
+    <p>Age: <span id="user-age"></span></p>
+    <p>City: <span id="user-city"></span></p>
+    <p>Phone: <span id="user-tel"></span></p>
+    <button id="edit-user">Edit</button>
+    <button id="remove-user">Remove</button>
+    <button id="close-details">Close</button>
+  </div>
+  <form id="add-user-form" style="display: none;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" required>
+    <label for="age">Age:</label>
+    <input type="text" id="age" required>
+    <label for="city">City:</label>
+    <input type="text" id="city" required>
+    <label for="tel">Phone:</label>
+    <input type="text" id="tel" required>
+    <button type="submit">Add User</button>
+  </form>
+ </div> 
+<script src="main.js"></script>   
+</body>
+</html>
